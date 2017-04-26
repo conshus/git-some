@@ -13,7 +13,7 @@ class Github extends Component {
             <div className='col s12 m4 cutout tab'>
               Code Name:
               <br/>{user.login}
-              <br/><a href={user.html_url}>(GitHub Profile)</a>
+              <br/><a href={user.html_url} target="_blank">(GitHub Profile)</a>
             </div>
             <div className='col s12 m8'>
               <img className="responsive-img" alt="github" src="gioctocat.png" />
@@ -26,7 +26,7 @@ class Github extends Component {
             <div className='col s12 m8 cutout left-align gitInfo'>
               <br/>Real Name: {user.name}
               <br/>Location: {user.location}
-              <br/>Blog: {user.blog}
+              <br/>Blog: <a href={user.blog} target="_blank">{user.blog}</a>
               <br/>Hireable: {user.hireable ? "Yes" : "No"}
               <br/>Bio: {user.bio}
               {console.log(this.props.repos)}
