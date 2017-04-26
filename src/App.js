@@ -60,7 +60,7 @@ class App extends Component {
           <ul id='slide-out' className='side-nav fixed'>
             <li className="search">
               <div className="search-wrapper card">
-                <input id="search" onChange={this.handleChange.bind(this)} />
+                <input id="search" onChange={this.handleChange.bind(this)} placeholder="please enter a GitHud ID"/>
                   <i className="material-icons searchIcon" onClick={this.searchClick.bind(this)}>search</i>
               </div>
             </li>
