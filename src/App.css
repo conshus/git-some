@@ -71,3 +71,7 @@ body{
   border-color: white;
   border-style: dashed dashed dashed none;
 }
+.copse{
+  font-family: 'Copse', serif;
+  font-size: 1.5vw;
+}

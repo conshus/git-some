@@ -64,12 +64,10 @@ class App extends Component {
                   <i className="material-icons searchIcon" onClick={this.searchClick.bind(this)}>search</i>
               </div>
             </li>
-            {console.log(tiyGithub)}
             {tiyGithub.map((user, index) => {
               return <li><a data-id={user.id} onClick={this.tiyGithubClick.bind(this, user)}>{user.name}</a></li>
             })}
           </ul>
-          {console.log(this.state.hasLoadedRepos)}
           <a href="#" data-activates="slide-out" className="button-collapse hide-on-large-only"><i className="material-icons">menu</i></a>
           <Github profile={this.state.profile} hasLoadedProfile={this.state.hasLoadedProfile}/>
           <Github repos={this.state.repos} hasLoadedRepos={this.state.hasLoadedRepos}/>
